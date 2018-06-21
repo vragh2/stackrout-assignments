@@ -13,13 +13,18 @@
 			<input type="button" onclick="getRepo()" value="Submit form">
 		</form>
 	</div>
-	<form id="issueForm" style="display: none">
-		New issue form
-		First name: <input type="text" name="firstName"><br>
-		Last Name: <input type="text" name="lastName"><br>
-		Issue: <input type="text" name="issueName"><br>
-		<input type="button" onclick="submitForm()" value="Submit">
-	</form>
+	<div style="display: none" id="issueWrapper">
+		<div>
+			<span>Create an issue for</span>
+			<span id="repoName"></span>
+		</div>
+		<form id="issueForm">
+			Issue Label: <input type="text" name="firstName" id="issueLabel">
+			Message: <input type="text" name="lastName" id="issueMessage">
+			<input type="button" onclick="createANewIssue()" value="Submit">
+		</form>
+	</div>
+	<span id="successMessage" style="display: none"></span>
 	<h3 id="user"><h3>
 	<div id="content"></div>
 </body>
