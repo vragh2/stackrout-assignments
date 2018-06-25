@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Gamedev Canvas Workshop</title>
+    <script src="main.js"></script>
+</head>
+<body>
+
+	<div>
+		<form id="myForm">
+			User name:	<input type="text" name="user_name" id="vimalForm" placeholder="Github username">	
+			<input type="button" onclick="getRepo()" value="Submit form">
+		</form>
+	</div>
+	<div style="display: none" id="issueWrapper">
+		<div>
+			<span>Create an issue for</span>
+			<span id="repoName"></span>
+		</div>
+		<form id="issueForm">
+			Issue Label: <input type="text" name="firstName" id="issueLabel">
+			Message: <input type="text" name="lastName" id="issueMessage">
+			<input type="button" onclick="createANewIssue()" value="Submit">
+		</form>
+	</div>
+	<span id="successMessage" style="display: none"></span>
+	<h3 id="user"><h3>
+	<div id="content"></div>
+</body>
+</html>
